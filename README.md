@@ -100,7 +100,7 @@ The loss plot shows the classic adversarial dynamic. Ideally, the losses should 
 
 ## Performance Improvements
 
-- **Training Time**: Originally expected to be 15+ hours on a local CPU/GPU. After code optimization (mixed precision, larger batch size, simplified architecture, and less frequent image saving), reduced to ~3-4 hours on a good GPU. Final training on Kaggle TPU took less than 1 hour.
+- **Training Time**: Originally expected to be 50+ hours on a local CPU/GPU. After code optimization (mixed precision, larger batch size, simplified architecture, and less frequent image saving), reduced to ~15 hours on a good GPU. Final training on Kaggle TPU took less about 1 hour.
 - **Memory Usage**: Optimized batch processing and model architecture
 - **Hardware Utilization**: Efficient use of mixed precision, large batches, and TPU acceleration
 - **Storage**: Reduced number of saved images (every 5 epochs vs every epoch)
@@ -125,5 +125,6 @@ The loss plot shows the classic adversarial dynamic. Ideally, the losses should 
 -   **Visual Artifacts**: Some generated images still have minor fixed parts or artifacts, but overall, the results are strong for a simple DCGAN.
 
 ## License
+
 
 This project is licensed under the MIT License.
