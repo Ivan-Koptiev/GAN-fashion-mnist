@@ -100,7 +100,7 @@ The loss plot shows the classic adversarial dynamic. Ideally, the losses should 
 
 ## Performance Improvements
 
-- **Training Time**: Originally expected to be 50+ hours on a local CPU/GPU. After code optimization (mixed precision, larger batch size, simplified architecture, and less frequent image saving), reduced to ~15 hours on a good GPU. Final training on Kaggle TPU took about 1 hour.
+- **Training Time**: Originally expected to be 50+ hours on a local CPU/GPU. After code optimization (mixed precision, larger batch size, simplified architecture, and less frequent image saving), reduced to ~15 hours on a good GPU. Final training on Kaggle TPU takes anywhere around 15 minutes to an hour, depending on the TPU..
 - **Memory Usage**: Optimized batch processing and model architecture
 - **Hardware Utilization**: Efficient use of mixed precision, large batches, and TPU acceleration
 - **Storage**: Reduced number of saved images (every 5 epochs vs every epoch)
